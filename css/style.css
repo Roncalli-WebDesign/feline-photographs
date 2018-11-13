@@ -1,0 +1,71 @@
+*, html, body {
+margin: 0;
+padding: 0;
+}
+
+/* SECTION */
+.hero {
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.hero::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 0;
+}
+.hero-text{
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 40vh;
+  text-align: center;
+  z-index: 1000:
+  position:absolute;
+}
+
+/* TYPOGHRAPGHY */
+h1 {
+  color: white;
+  font-family: "Poppins", Arial,Helvetica,sans-serif;
+  font-weight: 900;
+  font-size: 85px;
+  margin: 0 0 10px;
+}
+p {
+  color: white;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+a {
+  text-decoration: none;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.photo-container {
+  width: 70%;
+  margin: 0 auto;
+}
+.photo-container:before, .photo-container:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+.photo {
+  width: 31%;
+  float: left;
+  display:inline-block;
+  margin: 0 1%;
+}
+.photo img {
+  width: 100%;
+  height: auto;
+}
